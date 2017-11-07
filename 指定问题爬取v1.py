@@ -53,7 +53,7 @@ class OneQueestionImg(object):
         #         filename = url[-10:]
         #         self.saveimg(img, filename)
 
-        return con_num
+        return num
 
     def start_work(self):
         con_num = self.handle_content()
