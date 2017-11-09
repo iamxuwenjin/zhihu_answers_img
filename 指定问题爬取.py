@@ -45,8 +45,7 @@ class OneQueestionImg(object):
         # list = soup.select('span[class="RichText CopyrightRichText-richText"] img')
         con_num = soup.select('h4')[0].get_text()
         con_num = self.pattern.search(con_num).group()
-        num = (int(con_num)//20)
-        print num
+        num = (int(con_num)//20)+1
         list = soup.find_all('span',{'class':'RichText CopyrightRichText-richText'})
         list_str = str(list)
         i_list = self.pattern_img.findall(list_str)
